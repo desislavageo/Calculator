@@ -1,5 +1,12 @@
-import org.junit.jupiter.api.Test;
+package tests.unit;
 
+import calculator.Calculator;
+
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+
+@TestMethodOrder(MethodOrderer.MethodName.class) // if we want to order tests in alphabetical
 public class TestCalculatorAddJUnit {
 
     //methods are NOT static
@@ -13,7 +20,6 @@ public class TestCalculatorAddJUnit {
         // WHEN
         // Steps
         int result = calculator.add(2,3);
-        System.out.println("The result is ok");
 
         // THEN
         // Expected Result (pass/fail criteria)
@@ -35,7 +41,6 @@ public class TestCalculatorAddJUnit {
         // WHEN
         // Steps
         int result = calculator.add(2,0);
-        System.out.println("The result is ok");
 
         // THEN
         // Expected Result (pass/fail criteria)

@@ -41,24 +41,29 @@
 
     <build>
             <plugins>
+                <!-- If we want to run all tests - install Lifecycle Maven-->
                 <plugin>
+                   <!-- Plugin unit tests - test Lifecycle Maven-->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.2.3</version>
                     <configuration>
-                        <includes>
-                            <include>TestCalculatorAddJUnit</include>
-                        </includes>
+                        <skipTests>false</skipTests>
+                    <!-- <includes>
+                            <include>tests.unit.TestCalculatorAddJUnit</include>
+                         </includes>
+                        -->
                     </configuration>
                 </plugin>
 
                 <plugin>
+                    <!-- Plugin Integration tests - verify phase Lifecycle Maven -->
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <version>3.2.3</version>
                     <configuration>
                         <excludes>
-                            <exclude>TestCalculatorAddJUnit</exclude>
+                            <exclude>tests.unit.TestCalculatorAddJUnit</exclude>
                         </excludes>
                     </configuration>
                     <executions>

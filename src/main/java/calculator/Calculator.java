@@ -1,30 +1,38 @@
-
+package calculator;
 
 public class Calculator {
 
 
     public int add(int a, int b) {
         int result = a + b;
-        System.out.println("The result of add is:" + result);
+        System.out.println("The result of add is: " + result);
         return result;
     }
 
     public int subtract(int a, int b) {
         int result = a - b;
-        System.out.println("The result of subtract is:" + result);
+        System.out.println("The result of subtract is: " + result);
+        return result;
+    }
+    public int subtractOnlyForPositiveNumbers(int a, int b) {
+        if (a < b) {
+            throw new IllegalArgumentException("For this positive subtract method the negative number as a first value is not possible");
+        }
+        int result = a - b;
+        System.out.println("The result of subtract is: " + result);
         return result;
     }
 
     public double divide(double a, double b) {
         double result = a / b;
-        System.out.println("The result of divide is:" + result);
+        System.out.println("The result of divide is: " + result);
         return result;
     }
 
 
     public int multiply(int a, int b) {
         int result = a * b;
-        System.out.println("The result of multiply is:" + result);
+        System.out.println("The result of multiply is: " + result);
         return result;
     }
 

@@ -1,4 +1,1 @@
-CalculatorFactorialITCase.class
-TestCalculatorAddJUnit.class
-TestCalculatorAddAssertJAVAMechanism.class
-TestCalculatorMultiply.class
+tests\TestCalculatorAddAssertJAVAMechanism.class
