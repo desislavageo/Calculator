@@ -1,5 +1,5 @@
-# calculator.Calculator Project 
-Basic calculator.Calculator Project with Unit tests and simple integration test
+# Calculator Project - Testing
+Basic Calculator Project with Unit tests and simple Integration test
 
 ## More details:
 `Maven`
