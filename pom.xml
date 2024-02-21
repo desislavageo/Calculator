@@ -50,7 +50,7 @@
                     <configuration>
                         <skipTests>false</skipTests>
                     <!-- <includes>
-                            <include>tests.unit.TestCalculatorAddJUnit</include>
+                            <include>tests.unit.testorders.junitbeforeafter.TestCalculatorAddJUnit</include>
                          </includes>
                         -->
                     </configuration>
@@ -63,7 +63,7 @@
                     <version>3.2.3</version>
                     <configuration>
                         <excludes>
-                            <exclude>tests.unit.TestCalculatorAddJUnit</exclude>
+                            <exclude>tests.unit.testorders.junitbeforeafter.TestCalculatorAddJUnit</exclude>
                         </excludes>
                     </configuration>
                     <executions>

@@ -1,13 +1,32 @@
-package tests.unit;
+package tests.unit.testorders.junitbeforeafter;
 
 import calculator.Calculator;
 
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.*;
+import tests.BaseTestClass;
 
 @TestMethodOrder(MethodOrderer.MethodName.class) // if we want to order tests in alphabetical
-public class TestCalculatorAddJUnit {
+public class TestCalculatorAddJUnit extends BaseTestClass {
+
+    @BeforeEach
+    public void beforeEachTest (){
+        System.out.println("Before each test");
+    }
+
+    @AfterEach
+    public void afterEachTest (){
+        System.out.println("After each test");
+    }
+
+    @BeforeAll
+    public static void beforeAllTestsInClass (){
+        System.out.println("Before All tests in class");
+    }
+
+    @AfterAll
+    public static void afterAllTestsInClass (){
+        System.out.println("After All tests in class");
+    }
 
     //methods are NOT static
     @Test
